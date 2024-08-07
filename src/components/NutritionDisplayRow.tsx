@@ -1,6 +1,6 @@
 import React from "react";
 
-interface NutritionDisplayRowProps {
+export interface NutritionDisplayRowProps {
     property: string
     value: string
 }
