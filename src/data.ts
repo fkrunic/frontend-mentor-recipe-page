@@ -2,6 +2,7 @@ import {InstructionSection} from "./components/InstructionSection.tsx";
 import {NutritionSectionProps} from "./components/NutritionSection.tsx";
 import {IngredientSectionProps} from "./components/IngredientSection.tsx";
 import {PreparationSectionProps} from "./components/PreparationSection.tsx";
+import {HeaderProps} from "./components/Header.tsx";
 
 export const appData: NutritionSectionProps = {
     title: "Nutrition",
@@ -86,4 +87,9 @@ export const preparationSection: PreparationSectionProps = {
             description: "5 minutes"
         }
     ]
+}
+
+export const header: HeaderProps = {
+    title: "Simple Omelette Recipe",
+    description: "An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs, cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats."
 }
