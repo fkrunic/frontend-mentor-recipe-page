@@ -1,0 +1,18 @@
+import {IngredientRow} from "./IngredientRow.tsx";
+
+export interface IngredientSectionProps {
+    ingredients: string[]
+}
+
+export const IngredientSection = ({ingredients}: IngredientSectionProps) => {
+    return (
+        <div className="flex flex-col gap-[17px] pb-[33px]">
+            <div className="font-young-serif text-[30px]">Ingredients</div>
+            <div className="flex flex-col pl-[8px]">
+                <div className="flex flex-col gap-[10px]">{ingredients.map((content, index) => (
+                    <IngredientRow key={index} content={content}/>
+                ))}</div>
+            </div>
+        </div>
+    )
+}

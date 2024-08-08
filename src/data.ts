@@ -1,5 +1,6 @@
 import {InstructionSection} from "./components/InstructionSection.tsx";
 import {NutritionSectionProps} from "./components/NutritionSection.tsx";
+import {IngredientSectionProps} from "./components/IngredientSection.tsx";
 
 export const appData: NutritionSectionProps = {
     title: "Nutrition",
@@ -56,5 +57,15 @@ export const instructionSection: InstructionSection = {
             title: "Enjoy",
             description: "Serve hot, with additional salt and pepper if needed."
         }
+    ]
+}
+
+export const ingredientSection: IngredientSectionProps = {
+    ingredients: [
+        "2-3 large eggs",
+        "Salt, to taste",
+        "Pepper, to taste",
+        "1 tablespoon of butter or oil",
+        "Optional fillings: cheese, diced vegetables, cooked meats, herbs"
     ]
 }
