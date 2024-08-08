@@ -1,28 +1,16 @@
 import './App.css'
-
-// function NutritionDisplayRow(property: string, value: string) {
-//     return (
-//         <div className="
-//             w-full
-//
-//             flex
-//             flex-col
-//             gap-[10px]
-//
-//             pl-[32px]
-//             pb-[13px]
-//
-//             border-b
-//             ">
-//
-//         </div>
-//     )
-// }
+import {NutritionSection} from "./components/NutritionSection.tsx";
+import {InstructionSection} from "./components/InstructionSection.tsx";
+import {appData, instructionSection} from "./data.ts";
 
 function App() {
   return (
       <div className="flex flex-col justify-center items-center min-h-screen">
-        <h1 className="text-3xl font-outfit font-bold underline">Hello World!</h1>
+          <h1 className="text-3xl font-young-serif font-bold underline">Hello World!</h1>
+          <div className="flex flex-col gap-[10px] items-center px-[10px] py-[40px]">
+              <InstructionSection {...instructionSection} />
+              <NutritionSection title={appData.title} description={appData.description} entries={appData.entries} />
+          </div>
       </div>
   )
 }
