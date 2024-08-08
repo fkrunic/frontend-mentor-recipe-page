@@ -1,6 +1,7 @@
 import {InstructionSection} from "./components/InstructionSection.tsx";
 import {NutritionSectionProps} from "./components/NutritionSection.tsx";
 import {IngredientSectionProps} from "./components/IngredientSection.tsx";
+import {PreparationSectionProps} from "./components/PreparationSection.tsx";
 
 export const appData: NutritionSectionProps = {
     title: "Nutrition",
@@ -67,5 +68,22 @@ export const ingredientSection: IngredientSectionProps = {
         "Pepper, to taste",
         "1 tablespoon of butter or oil",
         "Optional fillings: cheese, diced vegetables, cooked meats, herbs"
+    ]
+}
+
+export const preparationSection: PreparationSectionProps = {
+    rows: [
+        {
+            title: "Total",
+            description: "Approximately 10 minutes"
+        },
+        {
+            title: "Preparation",
+            description: "5 minutes"
+        },
+        {
+            title: "Cooking",
+            description: "5 minutes"
+        }
     ]
 }
