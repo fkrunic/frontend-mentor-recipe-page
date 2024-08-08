@@ -1,12 +1,12 @@
 import {InstructionRow, InstructionRowProps} from "./InstructionRow.tsx";
 import React from "react";
 
-export interface InstructionSection {
+export interface InstructionSectionProps {
     title: string,
     instructions: InstructionRowProps[]
 }
 
-export const InstructionSection: React.FC<InstructionSection> = ({title, instructions}) => {
+export const InstructionSection: React.FC<InstructionSectionProps> = ({title, instructions}) => {
     return (
         <div className="flex flex-col gap-[16px]">
             <div className="font-young-serif text-[30px]">{title}</div>

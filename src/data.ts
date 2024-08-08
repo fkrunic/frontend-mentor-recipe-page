@@ -1,10 +1,11 @@
-import {InstructionSection} from "./components/InstructionSection.tsx";
+import {InstructionSectionProps} from "./components/InstructionSection.tsx";
 import {NutritionSectionProps} from "./components/NutritionSection.tsx";
 import {IngredientSectionProps} from "./components/IngredientSection.tsx";
 import {PreparationSectionProps} from "./components/PreparationSection.tsx";
 import {HeaderProps} from "./components/Header.tsx";
+import {RecipeCardProps} from "./components/RecipeCard.tsx";
 
-export const appData: NutritionSectionProps = {
+export const nutritionSection: NutritionSectionProps = {
     title: "Nutrition",
     description: "The table below shows nutritional value per serving without the additional fillings.",
     entries: [
@@ -26,7 +27,7 @@ export const appData: NutritionSectionProps = {
         }
     ]
 }
-export const instructionSection: InstructionSection = {
+export const instructionSection: InstructionSectionProps = {
     title: "Instructions",
     instructions: [
         {
@@ -92,4 +93,12 @@ export const preparationSection: PreparationSectionProps = {
 export const header: HeaderProps = {
     title: "Simple Omelette Recipe",
     description: "An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs, cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats."
+}
+
+export const recipieCard: RecipeCardProps = {
+    header: header,
+    preparation: preparationSection,
+    ingredients: ingredientSection,
+    instruction: instructionSection,
+    nutrition: nutritionSection
 }
