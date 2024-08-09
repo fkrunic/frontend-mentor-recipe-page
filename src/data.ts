@@ -1,9 +1,8 @@
-import {InstructionSectionProps} from "./components/desktop/InstructionSection.tsx";
-import {NutritionSectionProps} from "./components/desktop/NutritionSection.tsx";
-import {IngredientSectionProps} from "./components/desktop/IngredientSection.tsx";
-import {PreparationSectionProps} from "./components/desktop/PreparationSection.tsx";
-import {HeaderProps} from "./components/desktop/Header.tsx";
+import {InstructionSectionProps} from "./components/common/InstructionSection.tsx";
+import {IngredientSectionProps} from "./components/common/IngredientSection.tsx";
+import {PreparationSectionProps} from "./components/common/PreparationSection.tsx";
 import {RecipeCardProps} from "./components/desktop/RecipeCard.tsx";
+import {HeaderProps, NutritionSectionProps} from "./components/common/schema.ts";
 
 export const nutritionSection: NutritionSectionProps = {
     title: "Nutrition",
@@ -95,7 +94,7 @@ export const header: HeaderProps = {
     description: "An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs, cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats."
 }
 
-export const recipieCard: RecipeCardProps = {
+export const recipeCard: RecipeCardProps = {
     header: header,
     preparation: preparationSection,
     ingredients: ingredientSection,

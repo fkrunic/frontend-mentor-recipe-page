@@ -1,9 +1,5 @@
 import React from "react";
-
-export interface NutritionDisplayRowProps {
-    property: string
-    value: string
-}
+import {NutritionDisplayRowProps} from "../common/schema.ts";
 
 export const NutritionDisplayRow: React.FC<NutritionDisplayRowProps> = ({ property, value }) => {
     return (

@@ -1,17 +1,19 @@
-import {RecipeCard} from "./components/desktop/RecipeCard.tsx";
-import {recipieCard} from "./data.ts";
+import {RecipeCard as DesktopRecipeCard} from "./components/desktop/RecipeCard.tsx";
+import {RecipeCard as MobileRecipeCard} from "./components/mobile/RecipeCard";
+import {recipeCard} from "./data.ts";
 
 function App() {
-  return (
-      <div className="
-        flex flex-col
-        justify-center
-        items-center
-        min-h-screen
-        ">
-        <RecipeCard {...recipieCard} />
-      </div>
-  )
+    return (
+        <>
+            <div className="hidden md:block">
+                <DesktopRecipeCard {...recipeCard} />
+            </div>
+
+            <div className="md:hidden">
+                <MobileRecipeCard {...recipeCard} />
+            </div>
+        </>
+    )
 }
 
 export default App

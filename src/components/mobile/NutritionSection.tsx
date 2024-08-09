@@ -1,7 +1,8 @@
 import {NutritionDisplayRow} from "./NutritionDisplayRow.tsx";
 import {NutritionSectionProps} from "../common/schema.ts";
+import React from "react";
 
-export const NutritionSection = ({ title, description, entries }: NutritionSectionProps) => {
+export const NutritionSection: React.FC<NutritionSectionProps> = ({ title, description, entries }: NutritionSectionProps) => {
     return (
         <div className="w-full flex flex-col gap-[26px]">
             <div className="w-full flex flex-col gap-[16px]">

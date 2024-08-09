@@ -1,9 +1,5 @@
 import React from "react";
-
-export interface HeaderProps {
-    title: string,
-    description: string,
-}
+import {HeaderProps} from "../common/schema.ts";
 
 export const Header: React.FC<HeaderProps> = ({title, description}) => {
     return (
