@@ -1,4 +1,4 @@
-import {RecipeCard} from "./components/RecipeCard.tsx";
+import {RecipeCard} from "./components/desktop/RecipeCard.tsx";
 import {recipieCard} from "./data.ts";
 
 function App() {

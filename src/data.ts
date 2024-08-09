@@ -1,9 +1,9 @@
-import {InstructionSectionProps} from "./components/InstructionSection.tsx";
-import {NutritionSectionProps} from "./components/NutritionSection.tsx";
-import {IngredientSectionProps} from "./components/IngredientSection.tsx";
-import {PreparationSectionProps} from "./components/PreparationSection.tsx";
-import {HeaderProps} from "./components/Header.tsx";
-import {RecipeCardProps} from "./components/RecipeCard.tsx";
+import {InstructionSectionProps} from "./components/desktop/InstructionSection.tsx";
+import {NutritionSectionProps} from "./components/desktop/NutritionSection.tsx";
+import {IngredientSectionProps} from "./components/desktop/IngredientSection.tsx";
+import {PreparationSectionProps} from "./components/desktop/PreparationSection.tsx";
+import {HeaderProps} from "./components/desktop/Header.tsx";
+import {RecipeCardProps} from "./components/desktop/RecipeCard.tsx";
 
 export const nutritionSection: NutritionSectionProps = {
     title: "Nutrition",
