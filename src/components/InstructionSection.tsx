@@ -8,8 +8,8 @@ export interface InstructionSectionProps {
 
 export const InstructionSection: React.FC<InstructionSectionProps> = ({title, instructions}) => {
     return (
-        <div className="flex flex-col gap-[16px]">
-            <div className="font-young-serif text-[30px]">{title}</div>
+        <div className="flex flex-col gap-[16px] border-b-2 border-stone-150 pb-[10px]">
+            <div className="font-young-serif text-[30px] text-brown-800">{title}</div>
             <div className="flex flex-col pl-[7px] pb-[32px]">
                 <div className="flex flex-col gap-[8px]">{instructions.map((prop, index) => (
                     <InstructionRow

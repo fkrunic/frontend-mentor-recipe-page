@@ -21,7 +21,7 @@ export const NutritionDisplayRow: React.FC<NutritionDisplayRowProps> = ({ proper
             ">
             <div className="w-full flex flex-row">
                 <div className="w-[305px] font-outfit text-[16px]">{property}</div>
-                <div className="font-outfit font-bold text-[16px]">{value}</div>
+                <div className="font-outfit font-bold text-[16px] text-brown-800">{value}</div>
             </div>
         </div>
     )

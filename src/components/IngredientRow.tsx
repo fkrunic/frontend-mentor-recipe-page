@@ -7,7 +7,7 @@ export interface IngredientRowProps {
 
 export const IngredientRow: React.FC<IngredientRowProps> = ({ content }) => {
     return (
-        <div className="flex flex-row gap-[28px]">
+        <div className="flex flex-row gap-[28px] items-center">
             <Bullet/>
             <div className="font-outfit text-[16px]">{content}</div>
         </div>
