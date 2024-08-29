@@ -4,6 +4,7 @@ import {InstructionSection, InstructionSectionProps} from "../common/Instruction
 import {NutritionSection} from "./NutritionSection.tsx";
 import React from "react";
 import {HeaderProps, NutritionSectionProps} from "../common/schema.ts";
+import headerImg from "/image-omelette.jpeg";
 
 export interface RecipeCardProps {
     header: HeaderProps,
@@ -16,7 +17,7 @@ export interface RecipeCardProps {
 export const RecipeCard: React.FC<RecipeCardProps> = ({header, preparation, ingredients, instruction, nutrition}) => {
     return (
         <div className="flex flex-col bg-stone-50">
-            <img className="w-full" src={"/image-omelette.jpeg"} alt={"omelette"}/>
+            <img className="w-full" src={headerImg} alt={"omelette"}/>
             <div className="flex flex-col items-center gap-[30px] px-[30px] py-[40px]">
                 <div className="w-full font-young-serif text-[35px] leading-normal">{header.title}</div>
                 <div className="font-outfit text-[16px]">{header.description}</div>
